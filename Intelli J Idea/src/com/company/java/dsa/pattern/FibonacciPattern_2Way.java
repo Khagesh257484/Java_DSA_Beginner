@@ -10,7 +10,7 @@ public class FibonacciPattern_2Way {
         al.add(lt);
 
         int k=1;
-        for(int i=1;i<=4;i++){
+        for(int i=1;i<=5;i++){
             if(k<=i){
                 nt=ft+lt;
                 al.add(nt);
@@ -19,12 +19,14 @@ public class FibonacciPattern_2Way {
                 k++;
             }
         }
-        System.out.println(al);
+        System.out.println(al.get(3));
 
         // Print in Pattern
-        for (int i = 0; i < al.size(); i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print(al.get(i)+" ");
+        int m=0;
+        for (int i = 0; i <= al.size(); i++) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print(al.get(m)+" ");
+                m++;
             }
             System.out.println();
         }
